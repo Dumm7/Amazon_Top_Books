@@ -22,6 +22,9 @@ set(PROJECT_SOURCES
         bookdescription.h
         bookdescription.cpp
         bookdescription.ui
+        filter.cpp
+        filter.h
+        filter.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
