@@ -28,6 +28,12 @@ set(PROJECT_SOURCES
         login.cpp
         login.h
         login.ui
+        filteredbooks.cpp
+        filteredbooks.h
+        filteredbooks.ui
+        favorite.cpp
+        favorite.h
+        favorite.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
