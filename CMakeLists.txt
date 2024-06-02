@@ -19,6 +19,9 @@ set(PROJECT_SOURCES
         mainwindow.ui
         book.cpp
         book.h
+        bookdescription.h
+        bookdescription.cpp
+        bookdescription.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
