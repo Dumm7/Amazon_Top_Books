@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,6 +20,8 @@ public:
     ~MainWindow();
 
 private:
+    void initDatabase();
     Ui::MainWindow *ui;
+    QSqlDatabase m_db;
 };
 #endif // MAINWINDOW_H
