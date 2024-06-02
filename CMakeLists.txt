@@ -25,6 +25,9 @@ set(PROJECT_SOURCES
         filter.cpp
         filter.h
         filter.ui
+        login.cpp
+        login.h
+        login.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
