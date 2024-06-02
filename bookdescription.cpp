@@ -18,8 +18,9 @@ void BookDescription::setBook(Book book) {
     ui->pbAdd->setVisible(!book.isRead() && userIsLogIn);
     ui->pbRemove->setVisible(book.isRead() && userIsLogIn);
     ui->lDescription->setText(this->book.getDescription());
+    ui->lDescription->setWordWrap(true);
     QPixmap pixmap(this->book.getImagePath());
-    ui->lImage->setPixmap(pixmap.scaled(ui->lImage->size(), Qt::KeepAspectRatio));
+    ui->lImage->setPixmap(pixmap.scaled(ui->lImage->size(), Qt::KeepAspectRatioByExpanding));
 }
 
 void BookDescription::setUserIsLogIn(bool isLogin) {
